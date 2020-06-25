@@ -1,4 +1,4 @@
-{% set version = '4.4.1' %}
+{% set version = "4.4.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/compareGroups_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/compareGroups/compareGroups_{{ version }}.tar.gz
-  sha256: e150dfb86ebe65fa8d0b33a2b495055f11e53c2ccea28fe87ba4ceb11ca6d8df
+  sha256: 91f784420dd8a599aa2600cd28df839397e12f6b4811a7b08d68ff88a7ba4ff8
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -56,18 +56,12 @@ test:
 about:
   home: www.comparegroups.eu
   license: GPL-2.0-only
-  summary: Create data summaries for quality control, extensive reports for exploring data, as
-    well as publication-ready univariate or bivariate tables in several formats (plain
-    text, HTML,LaTeX, PDF, Word or Excel. Create figures to quickly visualise the distribution
-    of your data (boxplots, barplots, normality-plots, etc.). Display statistics (mean,
-    median, frequencies, incidences, etc.). Perform the appropriate tests (t-test, Analysis
-    of variance, Kruskal-Wallis, Fisher, log-rank, ...) depending on the nature of the
-    described variable (normal, non-normal or qualitative). Summarize genetic data (Single
-    Nucleotide Polymorphisms) data displaying Allele Frequencies and performing Hardy-Weinberg
-    Equilibrium tests among other typical statistics and tests for these kind of data.
+  summary: Create data summaries for quality control, extensive reports for exploring data, as well as publication-ready univariate or bivariate tables in several formats (plain text, HTML,LaTeX, PDF, Word or Excel. Create figures to quickly visualise the distribution of your data (boxplots, barplots, normality-plots, etc.).
+    Display statistics (mean, median, frequencies, incidences, etc.). Perform the appropriate tests (t-test, Analysis of variance, Kruskal-Wallis, Fisher, log-rank, ...) depending on the nature of the described variable (normal, non-normal or qualitative). Summarize genetic data (Single Nucleotide Polymorphisms) data displaying
+    Allele Frequencies and performing Hardy-Weinberg Equilibrium tests among other typical statistics and tests for these kind of data.
   license_family: GPL
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
