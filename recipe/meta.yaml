@@ -1,4 +1,4 @@
-{% set version = "4.4.3" %}
+{% set version = "4.4.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/compareGroups_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/compareGroups/compareGroups_{{ version }}.tar.gz
-  sha256: 91f784420dd8a599aa2600cd28df839397e12f6b4811a7b08d68ff88a7ba4ff8
+  sha256: b0979224c6a4ab273bfdfaf8984427b05bea29370d6ac665acff9539735a845d
 
 build:
   merge_build_host: true  # [win]
