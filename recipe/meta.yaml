@@ -24,7 +24,7 @@ requirements:
   host:
     - r-base
     - r-hardyweinberg
-    - r-snpassoc
+    - r-pmcmrplus
     - r-chron
     - r-flextable
     - r-kableextra
@@ -36,7 +36,7 @@ requirements:
   run:
     - r-base
     - r-hardyweinberg
-    - r-snpassoc
+    - r-pmcmrplus
     - r-chron
     - r-flextable
     - r-kableextra
@@ -53,7 +53,7 @@ test:
 
 about:
   home: www.comparegroups.eu
-  license: GPL-2.0-only
+  license: GPL-2.0-or-later
   summary: Create data summaries for quality control, extensive reports for exploring data, as well as publication-ready univariate or bivariate tables in several formats (plain text, HTML,LaTeX, PDF, Word or Excel. Create figures to quickly visualise the distribution of your data (boxplots, barplots, normality-plots, etc.).
     Display statistics (mean, median, frequencies, incidences, etc.). Perform the appropriate tests (t-test, Analysis of variance, Kruskal-Wallis, Fisher, log-rank, ...) depending on the nature of the described variable (normal, non-normal or qualitative). Summarize genetic data (Single Nucleotide Polymorphisms) data displaying
     Allele Frequencies and performing Hardy-Weinberg Equilibrium tests among other typical statistics and tests for these kind of data.
