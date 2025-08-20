@@ -21,6 +21,7 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-hardyweinberg
@@ -31,6 +32,8 @@ requirements:
     - r-knitr
     - r-officer
     - r-rmarkdown
+    - r-rmdformats
+    - r-rstatix
     - r-survival
     - r-writexl
   run:
@@ -43,6 +46,8 @@ requirements:
     - r-knitr
     - r-officer
     - r-rmarkdown
+    - r-rmdformats
+    - r-rstatix
     - r-survival
     - r-writexl
 
