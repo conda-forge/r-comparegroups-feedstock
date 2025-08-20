@@ -1,4 +1,4 @@
-{% set version = "4.9.1" %}
+{% set version = "4.10.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/compareGroups_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/compareGroups/compareGroups_{{ version }}.tar.gz
-  sha256: 9ea5f5d9b29f1b8078f7cb082584f7cfc9b8223bc7bc63231576d719e956c758
+  sha256: bb8e53a09fd56e754c192e58bf14eee9b2140b48393512456b3b8f28fb029780
 
 build:
   number: 0
